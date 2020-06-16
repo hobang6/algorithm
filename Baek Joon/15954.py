@@ -21,7 +21,7 @@ def main():
         for j in range(N - i + 1):
             mean = Decimal(acc_sum[i + j] - acc_sum[j]) / i     # 부분 합으로 평균 구하기
             square_mean = Decimal(acc_square[i + j] - acc_square[j]) / i       # 제곱의 부분 합으로 제곱의 평균 구하기
-            var = Decimal(square_mean - (mean * mean))       # 분산 = 제평평제
+            var = Decimal(square_mean - (mean * mean))       # 분산 = (제곱의 평균) - (평균의 제곱)
             result.append(var)
 
     print(Decimal(min(result)).sqrt())
