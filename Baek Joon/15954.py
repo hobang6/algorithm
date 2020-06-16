@@ -1,4 +1,5 @@
 # https://www.acmicpc.net/problem/15954
+
 # 카카오 코드 페스티벌 2018 예선 B번 
 
 from decimal import Decimal
